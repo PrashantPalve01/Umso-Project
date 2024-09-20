@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Umso Website</title>
+    <!-- fontawesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        body
+        {
+            background-color: rgb(9,11,14);
+            color: white;
+        }
+        nav{
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .logo{
+            height: 25px;
+            background-color: white !important;
+            border-radius: 10px;
+            padding: 5px 10px;
+        }
+        
+        .nav_ul{
+            width: 35%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .nva_li{
+            display: inline-block;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .login_sign{
+            padding: 10px;
+            background-color: rgb(9,11,14);
+            color: white;
+            border-radius: 10px;
+            border: 1px gray solid;
+        }
+
+        section{
+            display: flex;
+            justify-content: center;
+        }
+        .main_part{
+            width: 80%;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+        .get{
+            font-size: 60px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .ai{
+            color: blueviolet;
+            font-size: 60px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        p{
+            margin-top: 20px;
+            font-size: 17px;
+            color: rgb(159, 158, 158);
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .input-btn-box{
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+        }
+        .input_box{
+            border: 1px rgb(123,15,255)solid;
+            width: 45%;
+            box-shadow: 1px 1px 10px 1px rgb(123,15,255);
+            padding: 8px;
+            border-radius: 10px;
+        }
+        input{
+            width: 70%;
+            border:none;
+            padding: 10px;
+            background-color: rgb(9,11,14);
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+
+        }
+        input:focus{
+            outline:none;
+        }
+        .generate-btn{
+            padding: 12px 15px;
+            border-radius: 10px;
+            background-color: rgb(123,15,255);
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .feedback{
+            margin-top: 50px;
+        }
+        .feedback_ul{
+            width: 50%;
+            display: flex;
+            justify-content: space-between;
+            margin: auto;
+            margin-bottom: 30px;
+        }
+        .feedback_li{
+            display: inline;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .fa-solid {
+            color: green;
+            margin-right: 5px;
+        }
+        .btn-usmo{
+            margin: auto;
+            display: flex;
+            border-radius: 10px;
+            padding: 10px;
+            border: none;
+            justify-content: space-between;
+            width: 11%;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .btn-image{
+            height: 10px;
+            margin-top: 3px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="https://www.umso.com/lib_LUGoPiqXXlDptSWA/n6n24jywpz52ayxr.png" class="logo" alt="">
+            <ul class="nav_ul">
+                <li class="nva_li"><a href="">Pricing</a></li>
+                <li class="nva_li"><a href="">Features</a></li>
+                <li class="nva_li"><a href="">Showcase</a></li>
+                <li class="nva_li"><button class="login_sign">Login</button></li>
+                <li class="nva_li"><button class="login_sign">Sign Up <i class="fa-solid fa-arrow-right"></i></button></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <div class="main_part">
+            <h1 class="get">Get your</h1>
+            <h1 class="ai">AI genereated Website</h1>
+            <h1 class="get">In Seconds</h1>
+            <p>Give it try right below, without having to sign up!</p>
+            <div class="input-btn-box">
+                <div class="input_box">
+                    <input type="text" placeholder="Vegan Pizza Restaurant in">
+                    <button class="generate-btn">Generate <i class="fa-regular fa-star"></i></button>
+                </div>
+            </div>
+            <div class="feedback">
+                <ul class="feedback_ul">
+                    <li class="feedback_li">Excellent</li>
+                    <li class="feedback_li"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></li>
+                    <li class="feedback_li">4.8 out of 5 based on 85 reviews</li>
+                    <li class="feedback_li"><button><i class="fa-solid fa-star"></i>Truspiolt</button></li>
+                </ul>
+                
+                <button class="btn-usmo"><span>Made with </span><img src="https://www.umso.com/lib_LUGoPiqXXlDptSWA/n6n24jywpz52ayxr.png" alt="" class="btn-image"></button>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
